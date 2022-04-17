@@ -1,12 +1,16 @@
 import { Navbar } from "./Components/Navbar";
-import { Link,Route } from 'react-router-dom'
- 
+import { BrowserRouter as  Route, Switch } from 'react-router-dom'
+import  Home from './Views/Home'
 
 function App() {
   return (
     <div>
-      <h1>helloworld</h1>
         <Navbar />
+        <Switch>
+            <Route path="/">
+                <Home/>
+            </Route>
+        </Switch>
     </div>
   );
 }
