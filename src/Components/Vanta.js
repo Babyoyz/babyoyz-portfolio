@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef,useLayoutEffect } from 'react'
-import FOG from 'vanta/dist/vanta.fog.min'
+import dots from 'vanta/dist/vanta.dots.min'
 
 const Vanta = () => {
     const [vantaEffect, setVantaEffect] = useState(0)
@@ -31,7 +31,7 @@ const Vanta = () => {
   
         
       if (!vantaEffect) {
-        setVantaEffect(FOG({
+        setVantaEffect(dots({
           el: myRef.current,
           mouseControls: true,
           touchControls: true,
@@ -39,12 +39,10 @@ const Vanta = () => {
           minHeight: size[0] > 450 ? 400 :300,
           minWidth: 200.00,
           highlightColor: 0x252424,
-          midtoneColor: 0x6e6e6e,
-          lowlightColor: 0xf2f2f2,
-          baseColor: 0xdcdcdc,
-          blurFactor: 0.51,
-          speed: 1.50,
-          zoom: 2.50
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x1e0ac3,
+          color2: 0xf7b20f
         }))
       }
       return () => {
@@ -52,7 +50,9 @@ const Vanta = () => {
       }
     })
     return <div ref={myRef}>
-      Foreground content goes here
+        <div>
+            <p className='color-F8EB8D'>Hi ! WelCome to My Portfolio</p>
+        </div>
     </div>
 }
 
