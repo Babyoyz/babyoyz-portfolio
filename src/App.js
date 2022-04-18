@@ -1,6 +1,7 @@
 import { Navbar } from "./Components/Navbar";
-import { BrowserRouter as  Route, Switch } from 'react-router-dom'
+import { BrowserRouter as  Route, Switch,Link } from 'react-router-dom'
 import  Home from './Views/Home'
+import About from "./Views/About";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,8 +17,11 @@ function App() {
     <div>
         <Navbar />
         <Switch>
-            <Route path="/">
+            <Route  path="/" exact>
                 <Home/>
+            </Route>
+            <Route path="/About" exact>
+                <About/>
             </Route>
         </Switch>
     </div>

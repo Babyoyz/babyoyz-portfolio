@@ -1,7 +1,6 @@
 import React from 'react'
 import Vanta from '../Components/Vanta'
 import Introduce from '../Components/Introduce'
-
 const Home = (props) => {
     return(
         <div>
