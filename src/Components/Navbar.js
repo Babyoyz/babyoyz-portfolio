@@ -10,8 +10,7 @@ export const Navbar = () => {
             <label htmlFor="active" className="close"></label>
             <div className="wrapper">
             <ul>
-            <li><a className='link-a'>Home</a></li>
-            <li><a className='link-a'>About</a></li>
+            <li><a className='link-a' href="https://www.facebook.com/oilza600/">FaceBook</a></li>
         </ul>
         </div>
     </div>
