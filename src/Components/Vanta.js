@@ -22,7 +22,7 @@ const Vanta = () => {
     };
   
     const ShowWindowDimensions = props => {
-  useWindowSize();
+        useWindowSize();
     };
     
     ShowWindowDimensions();
